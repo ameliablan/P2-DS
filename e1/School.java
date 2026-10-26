@@ -28,15 +28,14 @@ public class School {
             totalRewards += reward;
 
             // Construye la línea de texto para cada miembro con sus datos y recompensa
-            sb.append(String.format("%s %s (%s, %d horcruxes): %.1f galleons\n",
-                    member.getFirstName(),
-                    member.getLastName(),
-                    member.getRewardDescription(),
-                    member.getHorcruxesDestroyed(),
-                    reward));
-        }
+            sb.append(String.format(java.util.Locale.US, "%s %s (%s, %d horcruxes): %.1f galleons\n",
+               member.getFirstName(),
+               member.getLastName(),
+               member.getRewardDescription(),
+               member.getHorcruxesDestroyed(),
+               reward));
 
-        sb.append(String.format("The total reward for Hogwarts School is %.1f galleons", totalRewards));
+        sb.append(String.format(java.util.Locale.US, "The total reward for Hogwarts School is %.1f galleons", totalRewards));
         return sb.toString();
     }
 
