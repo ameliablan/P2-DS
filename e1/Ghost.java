@@ -8,7 +8,7 @@ public class Ghost extends Resident {
         super(firstName, lastName, age, horcruxesDestroyed, house);
     }
 
-    // Sobreescribe el método para definir la tarifa específica de los fantasmas
+    // Definir la tarifa específica de los fantasmas
     @Override
     public double getGalleonsPerHorcrux() {
         return 80.0; // 80 galeones por cada horrocrux destruido
