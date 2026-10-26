@@ -3,7 +3,7 @@ package e1;
 // Ghost hereda de Resident (y por extensión, de HogwartsMember)
 public class Ghost extends Resident {
 
-    // El constructor simplemente pasa los datos a la clase padre (Resident) mediante super()
+    // El constructor simplemente pasa los datos a Resident mediante super()
     public Ghost(String firstName, String lastName, int age, int horcruxesDestroyed, House house) {
         super(firstName, lastName, age, horcruxesDestroyed, house);
     }
