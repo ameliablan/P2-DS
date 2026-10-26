@@ -14,10 +14,9 @@ public class Ghost extends Resident {
         return 80.0; // 80 galeones por cada horrocrux destruido
     }
 
-    // Sobreescribe la descripción para que indique que es el fantasma de su respectiva casa
+    // Define el fantasma formateando el nombre de la asignatura (Ghost of... (house))
     @Override
     public String getRewardDescription() {
-        // Usa un método de la clase padre (getFormattedHouse) para construir el texto
         return "Ghost of " + getFormattedHouse();
     }
 }
