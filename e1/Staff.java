@@ -6,9 +6,9 @@ public abstract class Staff extends HogwartsMember {
         super(firstName, lastName, age, horcruxesDestroyed);
     }
 
-    // Obliga a todos los empleados a definir su salario
+    // Definir salario de empleados
     public abstract int getSalary();
 
-    // Obliga a todos los empleados a definir su categoría
+    // Definir categoría de empleados
     public abstract String getStaffCategory();
 }
